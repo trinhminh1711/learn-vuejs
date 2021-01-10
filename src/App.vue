@@ -1,29 +1,21 @@
 <template>
   <div id="app">
-
+    <login class="mt-5"/>
   </div>
 </template>
 
 <script>
-
+import login from '../src/view/Login.vue'
 export default {
   data() {
-    return {
-
-    };
+    return {};
   },
   components: {
-  
-  },
-
-
+    'login': login,
+  }
 };
 </script>
 
-<style>
-#app {
-  font-size: 18px;
-  font-family: "Roboto", sans-serif;
-  color: blue;
-}
+<style scoped>
+
 </style>

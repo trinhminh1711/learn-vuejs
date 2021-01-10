@@ -1,0 +1,22 @@
+@import "~bootstrap/scss/bootstrap";
+$myFontSize: 12px;
+
+.mt-5
+{
+    margin-top: 5rem !important ;
+}
+html, body {
+    height: 100%;
+}
+input::placeholder
+{
+    font-size: $myFontSize;
+}
+body
+{
+
+    background: url('../image/cool-background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

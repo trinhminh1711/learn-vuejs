@@ -7,7 +7,7 @@ module.exports = {
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
     compress: true,
-    port: 9000
+    port: 3000
   },
   module: {
     rules: [
@@ -21,6 +21,19 @@ module.exports = {
         type: 'asset/resource',
 
       },
+      {
+        test: /\.s[ac]ss$/i,
+        use: [
+        
+          "style-loader",
+         
+          "css-loader",
+       
+          "sass-loader",
+        ],
+      },
+
+
     ]
   },
   plugins: [
